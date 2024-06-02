@@ -206,9 +206,9 @@
                 "XX|ST AND M1|XX",
             ],
             "SAND": [
-                "M2|M1|M1",
-                "M2|XX|M1",
-                "M2|M1|M2",
+                "CL|CL|CL",
+                "CL|CL|CL",
+                "CL|CL|CL",
             ],
         }
 
@@ -232,23 +232,32 @@
         // change - element transformed into after time
         elements = {
             "heat": {
-                "name": "heat",
+                "name": "MOLTNER",
                 "color": "#ff0000",
                 "behavior": behaviors.WALL,
-                "temp": 2,
+                "temp": 20000000000000000000000000000000000000000,
                 "category": "tools",
             },
             "cool": {
-                "name": "cool",
+                "name": "iCER",
                 "color": "#0000ff",
                 "behavior": behaviors.WALL,
-                "temp": -2,
+                "temp": -20000000000000000000000000000000000000000,
                 "category": "tools",
+            },
+            "sand2": {
+                "name": "sand (self-expanding)",
+                "color": "#e6d577",
+                "behavior": behaviors.SAND,
+                "density": 995,
+                "tempHigh": 1700,
+                "stateHigh": "molten_glass",
+                "category": "land",
             },
             "sand": {
                 "name": "sand",
                 "color": "#e6d577",
-                "behavior": behaviors.LIQUID,
+                "behavior": behaviors.POWDER,
                 "density": 995,
                 "tempHigh": 1700,
                 "stateHigh": "molten_glass",
@@ -506,8 +515,8 @@
                 ],
                 "category":"structure",
             },
-            "void": {
-                "name": "void",
+            " d": {
+                "name": " d",
                 "color": "#262626",
                 "behavior": behaviors.DELETE,
                 "category":"special",
